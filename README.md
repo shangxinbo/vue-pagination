@@ -46,36 +46,24 @@ export default {
 
 - __total__
 
-  type: String
+  type: Number
 
-  desc: init value for input and datetimepicker.__note that if you set `format`prop, this value must apply to your format__
+  desc: required is true, the max number of pages 
 
-  e.g. : `'2017-11-23'`
+  e.g. : `123`
 
 - __current__
 
-  type: Object
+  type: Number
 
-  desc: you can set this value to customize the view of picker.This object support three available keys.
+  desc: required is true, the current page 
 
-  - header    : background-color for header (year and month) 
-  - headerText : color for the font in header (year and month)
-  - checkedDate : background-color for selected day
-
-  e.g.:
-
-  ```javascript
-  {
-    header:'#cccccc',
-    headerText:'blue',
-    checkedDate:'green'
-  }
-  ```
+  e.g.:`23`
 
 #### Events
 
-- __jump(value)__
+- __jump(num)__
 
-  triggler: when choose the date or time (click ok buttons).when the input value changed
+  triggler: clicke the page button or prev/next button
 
-  value : return the picked value that formatted by your format option 
+  num : return the num going to 

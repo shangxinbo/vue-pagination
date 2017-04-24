@@ -99,7 +99,16 @@
 </template>
 <script>
     export default {
-        props: ['total', 'current'],
+        props: {
+            total: {
+                type: Number,
+                require: true
+            },
+            current: {
+                type: Number,
+                require: true
+            }
+        },
         methods: {
             goPage: function (page) {
                 this.$emit('jump', page)
