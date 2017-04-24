@@ -36,7 +36,7 @@
         cursor: default;
         background-color: #15c1ff;
         border-color: #e9e9e9;
-        color:white
+        color: white
     }
     
     .page a.disabled {

@@ -10,17 +10,18 @@
     export default {
         data() {
             return {
-                total: 1230,
+                total: 123,
                 current: 23
             }
         },
         components: {
             pages
         },
-        methods:{
-            jump(num){
+        methods: {
+            jump(num) {
                 this.current = num
             }
         }
     }
+
 </script>
